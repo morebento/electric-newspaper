@@ -465,7 +465,7 @@ BODY {
 </DIV><!-- /toolbar-area -->
 
 <!-- ==================== CONTENT IFRAME ==================== -->
-<IFRAME ID="content" SRC="archive/index.htm"
+<IFRAME ID="content" SRC="archive/INDEX.HTM"
   FRAMEBORDER="0" SCROLLING="auto"
   ONLOAD="frameLoaded()"
   TITLE="Content">
@@ -490,7 +490,7 @@ var progBar  = document.getElementById('progress-bar');
 var btnBack  = document.getElementById('btn-back');
 var btnFwd   = document.getElementById('btn-fwd');
 
-var histStack = ['archive/index.htm'];
+var histStack = ['archive/INDEX.HTM'];
 var histPos   = 0;
 var progTimer = null;
 
@@ -579,7 +579,7 @@ function frameLoaded() {
 
 /* ---- Navigation functions ---- */
 function goHome() {
-  loadUrl('archive/index.htm');
+  loadUrl('archive/INDEX.HTM');
 }
 
 function loadUrl(url) {
