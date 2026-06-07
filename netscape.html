@@ -470,6 +470,17 @@ BODY {
   ONLOAD="frameLoaded()"
   TITLE="Content">
 </IFRAME>
+<SCRIPT TYPE="text/javascript">
+// Read ?page= parameter and load that article on startup
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var page = params.get('page');
+  if (page) {
+    var iframe = document.getElementById('content');
+    iframe.src = page;
+  }
+})();
+</SCRIPT>
 
 <!-- ==================== STATUS BAR ==================== -->
 <DIV ID="statusbar">
@@ -490,7 +501,8 @@ var progBar  = document.getElementById('progress-bar');
 var btnBack  = document.getElementById('btn-back');
 var btnFwd   = document.getElementById('btn-fwd');
 
-var histStack = ['archive/INDEX.HTM'];
+var initialPage = (new URLSearchParams(window.location.search)).get('page') || 'archive/INDEX.HTM';
+var histStack = [initialPage];
 var histPos   = 0;
 var progTimer = null;
 
