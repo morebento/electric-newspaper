@@ -36,7 +36,7 @@
   </DIV>
 
   <SCRIPT TYPE="text/javascript">
-  function openNetscape() {
+  function openNetscape(page) {
     var w = 800, h = 600;
     var left = Math.round((screen.width  - w) / 2);
     var top  = Math.round((screen.height - h) / 2);
@@ -44,7 +44,8 @@
                ',left=' + left + ',top=' + top +
                ',menubar=no,toolbar=no,location=no' +
                ',status=no,scrollbars=no,resizable=yes';
-    var win = window.open('netscape.html', 'ElectricNewspaper1998', opts);
+    var url = page ? 'netscape.html?page=' + encodeURIComponent(page) : 'netscape.html';
+    var win = window.open(url, 'ElectricNewspaper1998', opts);
     if (win) { win.focus(); return false; }
     return true; /* fallback: follow the href normally */
   }
@@ -96,51 +97,51 @@
   </DIV>
   <DIV CLASS="section-links">
     <DIV CLASS="section-link">
-      <A HREF="archive/NEWS/INDEX.HTM">News</A>
+      <A HREF="netscape.html?page=archive%2FNEWS%2FINDEX.HTM" ONCLICK="return openNetscape('archive/NEWS/INDEX.HTM')">News</A>
       <SPAN CLASS="art-count">314 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/ESSAYS/INDEX.HTM">Essays</A>
+      <A HREF="netscape.html?page=archive%2FESSAYS%2FINDEX.HTM" ONCLICK="return openNetscape('archive/ESSAYS/INDEX.HTM')">Essays</A>
       <SPAN CLASS="art-count">114 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/SPORT/INDEX.HTM">Sport</A>
+      <A HREF="netscape.html?page=archive%2FSPORT%2FINDEX.HTM" ONCLICK="return openNetscape('archive/SPORT/INDEX.HTM')">Sport</A>
       <SPAN CLASS="art-count">96 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/FILMS/INDEX.HTM">Films</A>
+      <A HREF="netscape.html?page=archive%2FFILMS%2FINDEX.HTM" ONCLICK="return openNetscape('archive/FILMS/INDEX.HTM')">Films</A>
       <SPAN CLASS="art-count">45 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/BOOKS/INDEX.HTM">Books</A>
+      <A HREF="netscape.html?page=archive%2FBOOKS%2FINDEX.HTM" ONCLICK="return openNetscape('archive/BOOKS/INDEX.HTM')">Books</A>
       <SPAN CLASS="art-count">40 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/ARTS/INDEX.HTM">Arts</A>
+      <A HREF="netscape.html?page=archive%2FARTS%2FINDEX.HTM" ONCLICK="return openNetscape('archive/ARTS/INDEX.HTM')">Arts</A>
       <SPAN CLASS="art-count">38 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/FRINGE/INDEX.HTM">Fringe</A>
+      <A HREF="netscape.html?page=archive%2FFRINGE%2FINDEX.HTM" ONCLICK="return openNetscape('archive/FRINGE/INDEX.HTM')">Fringe</A>
       <SPAN CLASS="art-count">26 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/FOOD/INDEX.HTM">Food &amp; Drink</A>
+      <A HREF="netscape.html?page=archive%2FFOOD%2FINDEX.HTM" ONCLICK="return openNetscape('archive/FOOD/INDEX.HTM')">Food &amp; Drink</A>
       <SPAN CLASS="art-count">19 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/HOLIDAYS/INDEX.HTM">Holidays</A>
+      <A HREF="netscape.html?page=archive%2FHOLIDAYS%2FINDEX.HTM" ONCLICK="return openNetscape('archive/HOLIDAYS/INDEX.HTM')">Holidays</A>
       <SPAN CLASS="art-count">17 articles</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/LETTERS/INDEX.HTM">Letters</A>
+      <A HREF="netscape.html?page=archive%2FLETTERS%2FINDEX.HTM" ONCLICK="return openNetscape('archive/LETTERS/INDEX.HTM')">Letters</A>
       <SPAN CLASS="art-count">&nbsp;</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/COLONEL/INDEX.HTM">The Colonel</A>
+      <A HREF="netscape.html?page=archive%2FCOLONEL%2FINDEX.HTM" ONCLICK="return openNetscape('archive/COLONEL/INDEX.HTM')">The Colonel</A>
       <SPAN CLASS="art-count">&nbsp;</SPAN>
     </DIV>
     <DIV CLASS="section-link">
-      <A HREF="archive/TEAM/INDEX.HTM">The Team</A>
+      <A HREF="netscape.html?page=archive%2FTEAM%2FINDEX.HTM" ONCLICK="return openNetscape('archive/TEAM/INDEX.HTM')">The Team</A>
       <SPAN CLASS="art-count">&nbsp;</SPAN>
     </DIV>
   </DIV>
