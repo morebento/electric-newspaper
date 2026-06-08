@@ -38,7 +38,9 @@ The paper's coverage was almost entirely South Australian in focus. Its seven-mo
 ├── wikipedia.md        Draft Wikipedia article on The Electric Newspaper
 ├── README.md           This file
 └── archive/            The complete restored archive
-    ├── index.htm       Original front page
+    ├── INDEX.HTM       Original front page
+    ├── BANNER.HTM      Banner/splash page
+    ├── COVER.HTM       Cover page
     ├── NEWS/           314 news articles
     ├── ESSAYS/         114 essays and opinion pieces
     ├── SPORT/          96 sport articles
@@ -51,12 +53,20 @@ The paper's coverage was almost entirely South Australian in focus. Its seven-mo
     ├── LETTERS/        Letters to the editor
     ├── COLONEL/        The Colonel column
     ├── TEAM/           Staff and contributors page
+    ├── DIGEST/         News digest section
+    ├── ALMS/           Community/classifieds section
+    ├── CLASSIFI/       Classifieds
+    ├── LIBRARY/        Archive library index
+    ├── SURVEY/         Reader survey
+    ├── PIX/            Date-stamped photo sets
+    ├── PIXOFTHE/       Pix of the week galleries
     ├── BUTTONS/        Navigation button GIFs
     ├── HEADERS/        Section header GIFs
     ├── IMAGES/         Logo and masthead images
     ├── ILLUSTRA/       Editorial illustrations
+    ├── GRAPHICS/       Site graphics and icons
     ├── ADS/            Advertisement graphics
-    └── ...
+    └── SPONSORS/       Sponsor logo images (Internode, Cobweb, Virtual Artists)
 ```
 
 ---
