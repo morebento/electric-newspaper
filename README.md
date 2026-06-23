@@ -8,7 +8,7 @@ Adelaide, South Australia · February – July 1998
 
 ## Live Archive
 
-**[7w4tgv5gs5-commits.github.io/electric-newspaper](https://7w4tgv5gs5-commits.github.io/electric-newspaper/)**
+**[morebento.github.io/electric-newspaper](https://morebento.github.io/electric-newspaper/)**
 
 Clicking **Enter the Archive** opens the paper inside a simulated Netscape Navigator 4 browser window at 800×600 pixels — the browser and screen resolution most Australians used in 1998.
 
